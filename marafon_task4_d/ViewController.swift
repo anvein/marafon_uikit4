@@ -39,22 +39,10 @@ class ViewController: UIViewController {
         for number in 1...30 {
             list.append(Model(title: String(number), isSelected: false))
         }
-//
-//        let navigationController = UINavigationController(rootViewController: self)
-//        navigationController.title = "dsf"
-//
-//        navigationItem.title = "Your title here"
-//        title = "asdf"
         
-//        let navCon = UINavigationController()
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Shuffle", style: .plain, target: self, action: #selector(shuffleTable))
         navigationItem.title = "task 4"
-////        title = "dsf"
-////        navCon.navigationItem.title = "das"
-//        navigationItem.rightBarButtonItem?.tintColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
-////
-//        addChild(navCon)
-//        view.addSubview(navCon.view)
+
         
         tableView.reloadData()
     }
